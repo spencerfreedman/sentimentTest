@@ -32,7 +32,7 @@ nlp = spacy.load("en_core_web_sm")  # Pre-trained NER model
 
 # Set up NewsAPI key
 
-NEWSAPI_KEY = os.getenv('NEWSAPI_KEY')
+NEWSAPI_KEY = st.secrets["NEWSAPI_KEY"]
 
 # Function to get articles from NewsAPI
 def get_articles_from_newsapi(query, api_key, page=1):
