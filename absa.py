@@ -16,7 +16,7 @@ import os
 load_dotenv()
 
 # Download necessary data
-nltk.download('vader_lexicon')
+nltk.download('vader_lexicon', quiet=True)
 
 spacy.cli.download("en_core_web_sm")
 
